@@ -19,7 +19,7 @@ def test_delete(create_token, create_booking):
     assert response.status_code == 201
 
 
-@allure.title("Verfiy deleted booking not present")
+@allure.title("Verify deleted booking not present")
 @pytest.mark.smoke
 def test_get_deleted_id(create_token, create_booking):
     baser_url = "https://restful-booker.herokuapp.com"
